@@ -1,0 +1,325 @@
+
+/* GENERAL */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f8f7;
+    color: #243638;
+}
+
+/* HEADER */
+
+/* HEADER */
+
+/* HEADER BACKGROUND */
+.header {
+    background-image: url("header-background.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    padding: 0 50px;
+}
+
+/* WEBSITE NAME */
+.logo {
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px 5px black;
+    margin: 0;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 30px;
+}
+
+
+/* SEARCH BOX */
+.search-box {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+/* SEARCH INPUT */
+.search-box input {
+    width: 200px;
+    padding: 12px 15px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+/* SEARCH BUTTON */
+.search-box button {
+    background-color: #168b95;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* HOVER */
+.search-box button:hover {
+    background-color: #103c46;
+}
+
+/* NAVIGATION BAR */
+.nav-menu {
+    background-color: #222;
+    padding: 0 30px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 15px 12px;
+}
+
+.nav-links li a:hover {
+    background-color: #168b95;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+    .header {
+        padding: 15px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .search-box input {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .nav-menu {
+        padding: 0 10px;
+    }
+
+    .nav-links {
+        justify-content: center;
+    }
+
+    .nav-links li a {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+
+
+/* MAIN */
+.main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 25px;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.category {
+    color: #168b95;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: 56px;
+    max-width: 800px;
+    margin: 15px 0;
+    line-height: 1.1;
+    color: #103c46;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #607477;
+    max-width: 650px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* VIDEO */
+.hero-video {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+/* ARTICLE */
+.article {
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.article h2 {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    color: #103c46;
+    margin-top: 35px;
+    border-left: 4px solid #168b95;
+    padding-left: 15px;
+}
+
+.article p {
+    font-size: 17px;
+    line-height: 1.9;
+    color: #425558;
+}
+
+
+/* BEFORE AND AFTER IMAGE */
+.reef-comparison {
+    margin: 30px 0;
+}
+
+.reef-comparison img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-caption {
+    font-size: 13px !important;
+    font-style: italic;
+    color: #666;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+/* OCEAN TEMPERATURE SECTION */
+.temperature-section {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+/* LEFT SIDE */
+.temperature-text {
+    flex: 1;
+}
+
+/* RIGHT SIDE */
+.temperature-image {
+    flex: 1;
+}
+
+.temperature-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* IMAGE CAPTION */
+.temperature-image .image-caption {
+    font-size: 13px;
+    color: #666;
+    font-style: italic;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+/* MOBILE SCREEN */
+@media (max-width: 600px) {
+
+    .temperature-section {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .temperature-text,
+    .temperature-image {
+        width: 100%;
+    }
+}
+
+
+/* FOOTER */
+.footer {
+    background-color: #103c46;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+    .header {
+        padding: 15px;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .main {
+        padding: 20px 15px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .hero-video {
+        height: 280px;
+    }
+
+    .article h2 {
+        font-size: 24px;
+    }
+}
+
+/* CONTINUED TEXT BELOW THE TEMPERATURE IMAGE */
+.temperature-continued {
+    width: 100%;
+    margin-top: 20px;
+}
